@@ -1,0 +1,11 @@
+[Unit]
+Description=My Custom C Application
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/my-c-app
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
